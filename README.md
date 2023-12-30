@@ -4,19 +4,19 @@ Lately I got my hands on ESP and it has been fun!
 
 I have designed a simple circuit to control the status of my PC remotely. In simple terms, the PC can be turned on via a webpage that is accessible worldwide.
 
-# Project Aims:
+## Project Aims:
 1. Controlling the status of the PC remotely.
 2. Maintaining the PC push button function.
 
-# Project Needs:
+## Project Needs:
 1. Online server.
 2. ESP32 with Wi-Fi capability.
 3. Power source.
 
-# Project Needs: Online Server
+### Project Needs: Online Server
 I used 000webhost as it's easy to comprehend, free, and responsive. All I had to do, besides uploading PHP files for the webpage design, is to create database with a single row table that will be checked and altered by the ESP.
 
-# Project Needs: ESP32 with Wi-Fi Capabilities
+### Project Needs: ESP32 with Wi-Fi Capabilities
 1. ESP selection:
 Initially I started with "38-pin ESP32 WROOM 32" but it turned out to be superfluous. Alternatively, I used ESP32-C3 Supermini which as the name describes it, supermini and superb!
 
@@ -30,7 +30,7 @@ The ESP communicates with the server database periodically with a 1 min delay. I
 
 Most importantly, the button function is preserved away from any server or ESP failures. The button simply allows 3.3 volts from the ESP to energize the relay module directly. (Avoid using the 5 volts line as ESP operates on 3.3 volts)
 
-# Project Needs: Power Source
+### Project Needs: Power Source
 Surprisingly, the USB on computer motherboards can be left on AFTER a shutdown! The feature can be accessed through the Control Panel>Hardware and Sound>Power Options>Change plan settings (of your selected)>Change advanced power settings>USB settings>USB selective suspend settings.
 Taking advantage of this, 5 volts and ground are extended from any vacant USB headers and fed into the ESP and relay module.
 
