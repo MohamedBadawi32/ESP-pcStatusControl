@@ -14,7 +14,7 @@ I have designed a simple circuit to control the status of my PC remotely. In sim
 3. Power source.
 
 ### Project Needs: Online Server
-I used 000webhost as it's easy to comprehend, free, and responsive. All I had to do, besides uploading PHP files for the webpage design, is to create database with a single row table that will be checked and altered by the ESP.
+All is needed to be established, is some sort of communication between the ESP and the user. Simply, the ESP is continously reading a single cell in a Google sheet using Apps Script. The ESP sends requests to Apps Script requesting the content of A2 cell in the Google sheet. To control the content of the cell, the user need to send an email declaring his request. Once again, this done by IOS Shortcuts.  
 
 ### Project Needs: ESP32 with Wi-Fi Capabilities
 1. ESP selection:
